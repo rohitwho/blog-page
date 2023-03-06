@@ -8,32 +8,44 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Blog Page</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title> A Blog Page</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">A Blog Page</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">We BLog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Let's Blog</a>
+                    </li>
 
-            </ul>
+                    <button type="button" class="btn btn-primary justify-content-lg-end">
+                        Inbox
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            99+
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+
+
+                </ul>
+
+            </div>
         </div>
     </nav>
+
+
     <div class="bd-example">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -43,21 +55,21 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/images/pexels-helena-lopes-2253275.jpg" class="d-block w-100 h-50" alt="...">
+                    <img src="./assets/images/pexels-olia-danilevich-4974914.jpg" class="d-block w-100 h-50" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>This is just for show you can add a text here if you want.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/images/2023-02-18 (3).png" class="d-block w-100 h-50" alt="...">
+                    <img src="./assets/images/pexels-antoni-shkraba-4348401.jpg" class="d-block w-100 h-50" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Second slide label</h5>
                         <p>This is just for show you can add a text here if you want.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/images/2023-02-18 (5).png" class="d-block w-100 h-50" alt="...">
+                    <img src="./assets/images/pexels-san-engineer-1935370.jpg" class="d-block w-100 h-50" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
                         <p>This is just for show you can add a text here if you want.</p>
@@ -74,31 +86,116 @@
             </a>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <form>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
 
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">How are you feeling today?</label>
-            <select multiple class="form-control" id="Select2">
-                <option>Feeling Good </option>
-                <option>Feeling Angry</option>
-                <option>Feeling Sad</option>
-                <option>Feeling Frustated</option>
-                <option>Feeling Annoyed</option>
-            </select>
+
+    <div class="card1 bg-light" id="newscard">
+        <img src="./assets/images/Landscape fixed.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title ">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
-        <div class="form-group bg-light">
-            <label for="exampleFormControlTextarea1">What would you like to say</label>
-            <textarea class="form-control" id="Textarea1" rows="6"></textarea>
-            <button type="submit" class="btn btn-primary mb-2" id="add">Submit</button>
+    </div>
+    <div class="card" id="newscard1">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
-    </form>
+        <img src="./assets/images/Landscape1 fixed.jpg" class="card-img-top" alt="...">
+    </div>
+
+
+    <section id = "Main">
+    <div class="card-columns">
+        <div class="card">
+            <img src="./assets/images/potrait.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+            </div>
+        </div>
+        <div class="card p-3">
+            <blockquote class="blockquote mb-0 card-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card">
+            <img src="./assets/images/Potrait1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                    content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card bg-primary text-white text-center p-3">
+            <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                <footer class="blockquote-footer text-white">
+                    <small>
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./assets/images/Potrait3.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card p-3 text-right">
+            <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </small>
+                </footer>
+            </blockquote>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is another card with title and supporting text below. This card has
+                    some
+                    additional content to make it slightly taller overall.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="./assets/images/Potrait4.jpg" class="rounded mr-2" alt="...">
+            <strong class="mr-auto">We Blog</strong>
+            <small class="text-muted">1 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Hello, world How are you doing today?
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -110,56 +207,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script>
-        function getAndUpdate() {
-            console.log("Its done...");
-            tit = document.getElementById('Select2').value;
-            desc = document.getElementById('Textarea1').value;
-            if (localStorage.getItem('itemsJson') == null) {
-                itemJsonArray = [];
-                itemJsonArray.push([tit, desc]);
-                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
-            }
-            else {
-                itemJsonArrayStr = localStorage.getItem('itemsJson')
-                itemJsonArray = JSON.parse(itemJsonArrayStr);
-                itemJsonArray.push([tit, desc]);
-                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
-            }
-            update();
-        }
 
-        function update() {
-            if (localStorage.getItem('itemsJson') == null) {
-                itemJsonArray = [];
-                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
-            }
-            else {
-                itemJsonArrayStr = localStorage.getItem('itemsJson')
-                itemJsonArray = JSON.parse(itemJsonArrayStr);
-            }
-        };
-        add = document.getElementById("add");
-        add.addEventListener("click", getAndUpdate);
-        update();
-        function deleted(itemIndex) {
-            console.log("Delete", itemIndex);
-            itemJsonArrayStr = localStorage.getItem('itemsJson')
-            itemJsonArray = JSON.parse(itemJsonArrayStr);
-
-            itemJsonArray.splice(itemIndex, 1);
-            localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
-            update();
-
-        }
-        function clearStorage() {
-            if (confirm("Do you areally want to clear?")) {
-                console.log('Clearing the storage')
-                localStorage.clear();
-                update()
-            }
-        }
-    </script>
 </body>
 
 </html>

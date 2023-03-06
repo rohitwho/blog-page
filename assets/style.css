@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(52, 63, 63);
+}
+.nav{
+    border: 10px;
+    color: aliceblue;
+}
+
+#newscard , #newscard1, #Main{
+    margin: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <script>
+        function getAndUpdate() {
+            console.log("Its done...");
+            tit = document.getElementById('Select2').value;
+            desc = document.getElementById('Textarea1').value;
+            if (localStorage.getItem('itemsJson') == null) {
+                itemJsonArray = [];
+                itemJsonArray.push([tit, desc]);
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+            }
+            else {
+                itemJsonArrayStr = localStorage.getItem('itemsJson')
+                itemJsonArray = JSON.parse(itemJsonArrayStr);
+                itemJsonArray.push([tit, desc]);
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+            }
+            update();
+        }
+
+        function update() {
+            if (localStorage.getItem('itemsJson') == null) {
+                itemJsonArray = [];
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+            }
+            else {
+                itemJsonArrayStr = localStorage.getItem('itemsJson')
+                itemJsonArray = JSON.parse(itemJsonArrayStr);
+            }
+        };
+        add = document.getElementById("add");
+        add.addEventListener("click", getAndUpdate);
+        update();
+        function deleted(itemIndex) {
+            console.log("Delete", itemIndex);
+            itemJsonArrayStr = localStorage.getItem('itemsJson')
+            itemJsonArray = JSON.parse(itemJsonArrayStr);
+
+            itemJsonArray.splice(itemIndex, 1);
+            localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
+            update();
+
+        }
+        function clearStorage() {
+            if (confirm("Do you areally want to clear?")) {
+                console.log('Clearing the storage')
+                localStorage.clear();
+                update()
+            }
+        }
+    </script>*/
+
+
+
+    /*<form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">How are you feeling today?</label>
+            <select multiple class="form-control" id="Select2">
+                <option>Feeling Good </option>
+                <option>Feeling Angry</option>
+                <option>Feeling Sad</option>
+                <option>Feeling Frustated</option>
+                <option>Feeling Annoyed</option>
+            </select>
+        </div>
+        <div class="form-group bg-light">
+            <label for="exampleFormControlTextarea1">What would you like to say</label>
+            <textarea class="form-control" id="Textarea1" rows="6"></textarea>
+            <button type="submit" class="btn btn-primary mb-2" id="add">Submit</button>
+        </div>
+    </form>*/
